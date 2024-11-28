@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inputcolumn1 {
+    @apply focus:outline-none w-3/4 px-3 py-2 text-sm rounded-md bg-blue-100 border-[1px] border-gray-300
+}
+.login-btn {
+    @apply py-2 px-4 rounded-md text-white text-sm bg-blue-600 cursor-pointer
+}
+.is-invalid {
+    @apply text-xs text-red-700
+}
+.sidebar-button-actived {
+    @apply w-56 h-11 my-2 bg-gradient-to-br rounded-md from-[#6889FF] to-[#8F31B0] flex flex-row items-center px-7 font-semibold text-white cursor-pointer
+}
+.sidebar-button {
+    @apply w-56 h-11  text-B1B1B1 text-sm flex flex-row items-center px-4 cursor-pointer hover:font-semibold
+}
+.input-form-style-1 {
+    @apply text-[16px] font-medium placeholder:text-[#EBEBEB] text-white focus:text-white focus:outline-none bg-transparent
+}
+.enabled-submit-button {
+    @apply cursor-pointer bg-[#315BC9]
+}
+.disabled-submit-button {
+    @apply cursor-not-allowed bg-[#587fe0]
+}
+.CarouselImageAnimation {
+    @apply animate-ShowImageCarousel block
+}
+.CarouselContentAnimation {
+    @apply animate-ShowContentCarousel block
+}
+
+.CarouselNthChild {
+    &:nth-child(1) {
+        @apply z-[40] right-80 scale-[200%]
+    }
+    &:nth-child(2) {
+        @apply z-[39] translate-x-[40%] right-64
+    }
+    &:nth-child(3) {
+        @apply z-[38] translate-x-[150%] right-64
+    }
+    &:nth-child(4) {
+        @apply z-[38] translate-x-[260%] right-64
+    }
+    &:nth-child(5) {
+        @apply z-[38] translate-x-[370%] right-64
+    }
+}
+
+.ActiveTabs {
+    @apply text-[#3A53F8] border-b-2 border-[#3A53F8]
+}
